@@ -19,7 +19,7 @@
   pacman:
     name: 
     - base-devel
-    - sshd
+    - openssh
     - rofi
     - tree
     - git
