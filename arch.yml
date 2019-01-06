@@ -1,0 +1,5 @@
+---
+- hosts: gravity
+  become: true
+  roles:
+      - basic

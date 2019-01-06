@@ -1,0 +1,16 @@
+- name: "pacman -Syu"
+  pacman:
+    update_cache: yes
+    upgrade: yes 
+
+- name: "Install common tools"
+  pacman:
+    name: 
+    - tree
+    - git
+    - htop
+    - neovim
+    - sxiv
+    - kitty
+    - emacs 
+    state: latest
