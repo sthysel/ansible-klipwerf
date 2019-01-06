@@ -1,8 +1,11 @@
 ---
 - hosts: gravity
   become: true
+  #become_user: ansible
   roles:
-    - basic
-    - desktop
+    #- basic
+    #- desktop
+    #- arduino
+    - stm32
   
 # vim: ts=2 sw=2 et :

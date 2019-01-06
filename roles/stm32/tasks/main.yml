@@ -1,0 +1,13 @@
+- name: Install STM32 dev env
+  pacman:
+    name: 
+    - emacs 
+    - neovim
+    - cmake
+    - stlink
+    - gdb
+    - arm-none-eabi-gcc
+
+    state: latest
+
+# vim: ts=2 sw=2 et :

@@ -1,0 +1,9 @@
+- name: Install Arduino dev
+  pacman:
+    name: 
+    - emacs 
+    - neovim
+    - arduino
+    state: latest
+
+# vim: ts=2 sw=2 et :
