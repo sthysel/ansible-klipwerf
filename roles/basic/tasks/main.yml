@@ -1,11 +1,25 @@
+- name: Add ansible user
+  user:
+    name: ansible
+    group: wheel
+
+- name: Ansible user can do pacman things
+  lineinfile:
+    path: /etc/sudoers.d/11-ansible
+    line: 'ansible ALL=(ALL) NOPASSWD: /usr/bin/pacman'
+    create: yes
+    validate: 'visudo -cf %s'
+
 - name: "pacman -Syu"
   pacman:
     update_cache: yes
     upgrade: yes 
 
-- name: "Install common tools"
+- name: Install common tools
   pacman:
     name: 
+    - i3-gaps
+    - rofi
     - tree
     - git
     - htop
@@ -14,3 +28,5 @@
     - kitty
     - emacs 
     state: latest
+
+# vim: ts=2 sw=2 et :
