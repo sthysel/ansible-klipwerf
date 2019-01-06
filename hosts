@@ -1,5 +1,5 @@
 [arch]
-# piekanien
+piekanien
 folly
 sprinkler
 kaput
@@ -8,3 +8,9 @@ gravity
 
 [raspian]
 davis
+
+[desktops]
+folly
+gravity
+piekanien
+kaput

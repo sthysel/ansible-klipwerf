@@ -2,4 +2,7 @@
 - hosts: gravity
   become: true
   roles:
-      - basic
+    - basic
+    - desktop
+  
+# vim: ts=2 sw=2 et :

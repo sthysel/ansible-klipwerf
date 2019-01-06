@@ -1,0 +1,11 @@
+- name: Install desktop
+  pacman:
+    name: 
+    - i3-gaps
+    - feh
+    - sxiv
+    - kitty
+    - emacs 
+    state: latest
+
+# vim: ts=2 sw=2 et :
