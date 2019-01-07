@@ -1,0 +1,5 @@
+- name : Docker host
+  pacman:
+    name: 
+    - docker
+    state: latest
