@@ -1,0 +1,9 @@
+- name: Install steam 
+  pacman:
+    name:
+    - steam
+    - lsb-release
+    - lib32-nvidia-utils
+    state: latest
+
+# vim: ts=2 sw=2 et :

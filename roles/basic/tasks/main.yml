@@ -19,6 +19,8 @@
   pacman:
     name: 
     - base-devel
+    - polkit
+    - haveged
     - openssh
     - rofi
     - tree
@@ -29,6 +31,11 @@
     - ranger
     state: latest
 
+- name: Ensure haveged is running so sshd has some entropy
+  systemd:
+    name: haveged
+    enabled: yes
+    state: started
 
 - name: Ensure sshd is running
   systemd:
