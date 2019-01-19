@@ -1,12 +1,9 @@
 ---
-- hosts: gravity
+- hosts: impi
   become: true
   #become_user: ansible
   roles:
     - basic
-    #- desktop
-    #- arduino
-    #- stm32
-    #- dockerhost
+    - desktop
   
 # vim: ts=2 sw=2 et :

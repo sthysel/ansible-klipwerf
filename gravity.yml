@@ -4,9 +4,9 @@
   #become_user: ansible
   roles:
     - basic
-    #- desktop
-    #- arduino
-    #- stm32
-    #- dockerhost
+    - desktop
+    - arduino
+    - stm32
+    - dockerhost
   
 # vim: ts=2 sw=2 et :
