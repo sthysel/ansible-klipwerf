@@ -1,11 +1,23 @@
 - name: Install desktop
   pacman:
-    name: 
+    name:
+    - ttf-inconsolata
+    - ttf-linux-libertine
+    - trash-cli
+    - zathura
+    - zathura-pdf-mupdf
     - i3-gaps
     - feh
     - sxiv
     - kitty
     - emacs 
+    state: latest
+
+- name: Install tools from AUR 
+  aur:
+    name:
+    - ttf-emojione
+    - ttf-symola
     state: latest
 
 # vim: ts=2 sw=2 et :

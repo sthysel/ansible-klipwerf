@@ -10,12 +10,19 @@
     create: yes
     validate: 'visudo -cf %s'
 
-- name: "pacman -Syu"
+- name: Install yet another yogurt 
+  aur:
+    name: yay
+    use: makepkg
+    skip_installed: true
+    become_user: ansible
+
+- name: "Upgrade using pacman -Syu"
   pacman:
     update_cache: yes
     upgrade: yes 
 
-- name: Install common tools
+- name: Install common tools from official repos
   pacman:
     name:
     - pacman-contrib
@@ -30,7 +37,9 @@
     - neovim
     - feh
     - ranger
+    - tmux
     state: latest
+
 
 - name: Ensure haveged is running so sshd has some entropy
   systemd:
