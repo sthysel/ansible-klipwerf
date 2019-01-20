@@ -17,7 +17,8 @@
 
 - name: Install common tools
   pacman:
-    name: 
+    name:
+    - pacman-contrib
     - base-devel
     - polkit
     - haveged
