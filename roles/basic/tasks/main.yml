@@ -15,7 +15,6 @@
     name: yay
     use: makepkg
     skip_installed: true
-    become_user: ansible
 
 - name: "Upgrade using pacman -Syu"
   pacman:

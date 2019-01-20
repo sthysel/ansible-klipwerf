@@ -14,10 +14,12 @@
     state: latest
 
 - name: Install tools from AUR 
+  become: yes
+  become_user: ansible
   aur:
     name:
     - ttf-emojione
-    - ttf-symola
-    state: latest
+    - ttf-symbola
+    skip_installed: true
 
 # vim: ts=2 sw=2 et :
