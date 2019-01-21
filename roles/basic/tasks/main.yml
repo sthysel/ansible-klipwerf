@@ -24,6 +24,7 @@
 - name: Install common tools from official repos
   pacman:
     name:
+    - base-devel
     - pacman-contrib
     - base-devel
     - polkit
