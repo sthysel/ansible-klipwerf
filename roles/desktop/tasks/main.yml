@@ -1,6 +1,7 @@
 - name: Install desktop
   pacman:
     name:
+    - network-manager-applet
     - ttf-inconsolata
     - ttf-linux-libertine
     - trash-cli
